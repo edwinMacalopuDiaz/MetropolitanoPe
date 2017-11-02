@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/picturecard"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="5dp"
+    cardview:cardCornerRadius="2dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+            <ImageView
+                android:id="@+id/pictureImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/busmetropo"
+                android:layout_margin="5dp"
+
+                android:contentDescription="@string/title_bus"/>
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                   android:layout_marginLeft="120dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="10dp"
+                  android:layout_marginStart="120dp">
+
+                  <TextView
+                      android:id="@+id/nameTextView"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/title_estacion"
+                      android:textColor="@color/colorEstacion" />
+
+                  <TextView
+                      android:id="@+id/idTextView"
+                      android:layout_width="wrap_content"
+                      android:layout_height="72dp"
+
+                      android:text="@string/title_ex6" />
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:layout_marginTop="5dp"
+                 >
+
+                      <TextView
+                          android:id="@+id/nameTextView2"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="@string/title_hor"
+                          android:textColor="@color/colorEstacion"
+                          />
+
+                      <TextView
+
+                          android:id="@+id/idTextView2"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="@string/title_horario" />
+
+                  </LinearLayout>
+              </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</android.support.v7.widget.CardView>
+
